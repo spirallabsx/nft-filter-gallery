@@ -1,0 +1,35 @@
+{
+    "Background": [
+        "Black"
+    ],
+    "Bottom lid": [
+        "High",
+        "Low",
+        "Middle"
+    ],
+    "Eye color": [
+        "Cyan",
+        "Green",
+        "Pink",
+        "Purple",
+        "Red",
+        "Yellow"
+    ],
+    "Eyeball": [
+        "Red",
+        "White"
+    ],
+    "Iris": [
+        "Large",
+        "Medium",
+        "Small"
+    ],
+    "Shine": [
+        "Shapes"
+    ],
+    "Top lid": [
+        "High",
+        "Low",
+        "Middle"
+    ]
+}

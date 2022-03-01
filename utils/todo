@@ -1,0 +1,4 @@
+1. build function to create object for each nft containing its attributes data with
+each attribute name = property and its value = value.
+
+2. in filters.tsx iterate through list of attribute names, list name and values, and filter functionality

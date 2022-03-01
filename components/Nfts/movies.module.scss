@@ -1,0 +1,13 @@
+.segment {
+  // min-height: 270px;
+  // max-height: 270px;
+  overflow-y: scroll;
+  background-color: #eee !important;
+  padding: 0 !important;
+
+  .movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
