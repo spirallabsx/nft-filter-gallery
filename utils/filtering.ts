@@ -13,11 +13,6 @@ export const getAllEyeColors = () => {
   return attributes["Eye color"];
 };
 
-// export function getNftAttributeValue(nft: Nft) {
-//   // let nftAttributes = [];
-//   const nftAttributes = nft.attributes;
-//   return nftAttributes;
-// }
 
 export function getNftEyeColor(nft: Nft) {
   let nftAttributesEye = {};
@@ -48,22 +43,6 @@ function isShownByAttributeName(nft: Nft, filters: Filter[], attributeName: stri
   return attributeFilters.some((filter) => filter.fnc(nft));
 }
 
-
-
-function isShownByEyeColor(nft: Nft, filters: Filter[]) {
-  const eyeColorFilters = filters.filter((filter) => filter.group === Group.EYECOLOR);
-  if (!eyeColorFilters.length) return true;
-  return eyeColorFilters.some((filter) => filter.fnc(nft));
-}
-
-
-export function applyFiltersOld(nfts: Nft[], filters: Filter[]) {
-  return nfts.filter((nft) => {
-    const showByEyeColor = isShownByEyeColor(nft, filters);
-    return showByEyeColor;
-  });
-}
-
 export function applyFilters(nfts: Nft[], filters: Filter[]) {
   return nfts.filter((nft) => {
     var showByAttributeName = true;
@@ -76,5 +55,21 @@ export function applyFilters(nfts: Nft[], filters: Filter[]) {
     }
     return showByAttributeName;
     })}
+
+// function isShownByEyeColor(nft: Nft, filters: Filter[]) {
+//   const eyeColorFilters = filters.filter((filter) => filter.group === Group.EYECOLOR);
+//   if (!eyeColorFilters.length) return true;
+//   return eyeColorFilters.some((filter) => filter.fnc(nft));
+// }
+
+
+// export function applyFiltersOld(nfts: Nft[], filters: Filter[]) {
+//   return nfts.filter((nft) => {
+//     const showByEyeColor = isShownByEyeColor(nft, filters);
+//     return showByEyeColor;
+//   });
+// }
+
+
 
 

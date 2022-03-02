@@ -5,6 +5,7 @@ import Filters from "../Filters/Filters";
 import Nft from "../Nft/Nft";
 import styles from "./movies.module.scss";
 
+
 export default function Nfts({ nfts }: NftsProps) {
   const [filters, setFilters] = useState<Filter[]>([]);
 
